@@ -25,7 +25,7 @@ let countLeaves = function (root) {
     let arr = [root];
     while(arr.length > 0){
       let x = arr[0];
-      arr.splice(0, 1);
+      arr.splice(0, 1); 
       if(x.children.length > 0){
         for(let item of x.children){
           arr.push(item);
