@@ -40,4 +40,3 @@ console.log(output); // --> 2
 ```
 
 ## Advanced
-- 
