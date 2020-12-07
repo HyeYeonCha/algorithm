@@ -1,5 +1,5 @@
-spiralTraversal
-===============
+# radixSort
+
 ## 문제
 
 2차원 M x N 배열을 나선형(spiral)으로 순회해야 합니다.
