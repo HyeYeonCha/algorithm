@@ -1,26 +1,18 @@
 const LIS = function (arr) {
-    //TODO: 여기에 코드를 작성합니다.
-    let dp = [];
-  
-    for(let i=0; i<arr.length; i++){
-      let lis = [arr[i]];
-      for(let j=i+1; j<arr.length; j++){
-        if(arr[j-1] < arr[j]){
-          lis.push(arr[j]);
-        }
-      }
-      dp.push(lis.length);
-    }
-  
-    let maxLen = dp[0];
-    for(let el of dp){
-      if(maxLen < el)
-        maxLen = el;
-    }
-  
-    return maxLen;
-  
-  };
+  let dp = [1];
+  let count = 0;
+	for (let i = 1; i <= arr.length; i++) {
+		dp[i] = 1;
+		for (let j = 0; j < i; j++)
+		{
+			if (arr[i] > arr[j])
+				dp[i] = Math.max(dp[i], dp[j] + 1);
+		}
+		count = Math.max(count, dp[i]);
+	}
+
+	return count;
+};
 
 /*
   // naive solution: O(2^N)
