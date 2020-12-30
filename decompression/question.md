@@ -8,7 +8,8 @@
 
 ### 인자 1 : image
 
--배열을 요소로 갖는 배열 -`image.length`, `image[i].length`는 1,024 이하 -`image[i]`는 `number` 타입을 요소로 갖는 배열 -`image[i][j]`는 세로로 i, 가로로 j인 지점의 정보를 의미 -`image[i][j]`는 0 또는 1
+- 배열을 요소로 갖는 배열 -`image.length`, `image[i].length`는 1,024 이하 
+- `image[i]`는 `number` 타입을 요소로 갖는 배열 -`image[i][j]`는 세로로 i, 가로로 j인 지점의 정보를 의미 -`image[i][j]`는 0 또는 1
 
 ## 출력
 
